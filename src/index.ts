@@ -1,5 +1,5 @@
-module.exports.pascalize = function pascalize(object) {
-    const newObject = {};
+export default function pascalize(object:any) {
+    const newObject:any = {};
     if (object) {
         for (const [key, value] of Object.entries(object)) {
             const newKey = key.replace(/^\w/, item => item.toUpperCase());
